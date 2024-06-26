@@ -1,7 +1,7 @@
 import { Client, Account, ID } from "appwrite";
 import config from "../Config/config";
 
-class AuthService {
+ class AuthService {
 
     Client = new Client();
     Account;
@@ -48,7 +48,7 @@ class AuthService {
 
         }
         catch (err) {
-            throw new Error(err);
+            throw new Error("No User is Logged In. Please Login First");
         }
 
     }
